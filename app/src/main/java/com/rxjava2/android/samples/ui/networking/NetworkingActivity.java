@@ -224,6 +224,8 @@ public class NetworkingActivity extends AppCompatActivity {
     }
 
     public void flatMapAndFilter(View view) {
+
+
         getAllMyFriendsObservable()
                 .flatMap(new Function<List<User>, ObservableSource<User>>() { // flatMap - to return users one by one
                     @Override
@@ -479,8 +481,7 @@ public class NetworkingActivity extends AppCompatActivity {
 
     public void codeCompletion() {
         Bitmap bitmap = null;
-//        Drawable drawable = getApplication().getDrawable();
-    }
+        String message = "Quize Idea" + "Great"; }
 
     public void getList(List<String> urlList) {
         for (int j = 0; j < urlList.size(); j++) {
